@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/favincon.png" type="image/x-icon">
+    <title>Discolos</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/1200px-Disco_de_Vinilo.jpg" alt="logo">
+                    DISCOLOS
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mercado.html" target="_blank" >MERCADO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#separador">COMUNIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">NOSOTROS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/galeria.png" class="d-block w-100" alt="Interior de nuestro local">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/galeria2.png" class="d-block w-100" alt="Discos exhibidos">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/cds.png" class="d-block w-100" alt="Nuestro deposito">
+            </div>
+            </div>
+        </div>
+        <section id="destacados">
+            <h2 class="text-center">LANZAMIENTOS DESTACADOS</h2>
+            <div class="container-fluid" id="lanzamientos">
+                <div class="card" id="card">
+                    <div class="card-top">
+                        <img class="portada" src="./images/Metronomy.jpg" alt="Portada Small World">
+                    </div>
+                    <div class="card-bot">
+                        <div class="info">
+                            <h5>Metronomy - "Small World"</h5>
+                        </div>
+                        <div class="precio">
+                        <h6>$6.280
+                        </h6>
+                        </div>
+                    </div>
+                    <div class="carrito">
+                        <button type="button" class="btn btn-success">Comprar</button>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <div class="card-top">
+                        <img class="portada" src="./images/KanyeWest.jpg" alt="Portada Donda 2">
+                    </div>
+                    <div class="card-bot">
+                        <div class="info">
+                            <h5>Kanye West - "Donda 2"</h5>
+                        </div>
+                        <div class="precio">
+                        <h6>$4.900</h6>
+                        </div>
+                    </div>
+                    <div class="carrito">
+                        <button type="button" class="btn btn-success">Comprar</button>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <div class="card-top">
+                        <img class="portada" src="./images/Placebo.jpg" alt="Portada Never let me go">
+                    </div>
+                    <div class="card-bot">
+                        <div class="info">
+                            <h5>Placebo - "Never Let Me Go"</h5>
+                        </div>
+                        <div class="precio">
+                        <h6>$5.100</h6>
+                        </div>
+                    </div>
+                    <div class="carrito">
+                        <button type="button" class="btn btn-success">Comprar</button>
+                    </div>
+                </div>
+        </section>
+        <article class="separador" id="separador">
+                <img src="./images/fondovinilo.png" alt="">
+        </article>
+        <article class="d-flex justify-content-center" id="formulario">
+            <div class="card col-sm-6 p-3">
+                <div class="mb-2">
+                    <form action="">
+                        <div class="mb-5">
+                            <input type="text"
+                            class="form-control" name="nombre" id="nombre" placeholder="Nombre de la banda/artista">
+                        </div>
+                        <div class="mb-5">
+                            <input type="text"
+                            class="form-control" name="banda" id="banda" placeholder="Nombre del album/sencillo">
+                        </div>
+                        <div class="mb-5">
+                            <div class="d-grid gap-5">
+                                <button class="btn btn-secondary" type="button">Adjuntar archivos de audio y portada</button>
+                                <button class="btn btn-primary" type="button">Enviar</button>
+                            </div>
+                        </div>  
+                    </form>
+                </div>
+            </div>    
+        </article>
+        <section id="#nosotros">
+            <div class="row py-5" id="row-nosotros">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.163865585238!2d-60.020142828124314!3d-34.8982241466717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bea53696570b33%3A0xaf9e206a657b321e!2s25%20de%20Mayo%2047%2C%20Chivilcoy%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1657750426839!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="titulo-nosotros mb-3">SOBRE NOSOTROS</h2>
+                            <p>Discolos es un proyecto de amor a la música, nacido en 2012 para apoyar la producción y el acceso a discos independientes y autogestionados que en ese momento no encontrabas en la mayoría de las bateas de otras disquerías. Con el correr de los años se fue convirtiendo en una plataforma de difusión para todo tipo de música, con la idea de dar espacio a esos artistas que no figuran tanto en playlists, promociones y guías de consumo que lideran actualmente. Con la convicción de que la pluralidad de voces hace que la cultura de nuestro país sea más rica y representativa, trabajamos hace 10 años en Mercurio dando nuestro tiempo con placer (y perdón si en algún momento de manera caótica).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <h3>CONTACTO</h3>
+                <a href="#">2346-425582</a>
+                <a href="#">discolosinfo@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>SEGUINOS</h3>
+                <div class="redes">
+                    <a href=""#><i class="bi bi-instagram"></i></a>
+                    <a href=""#><i class="bi bi-facebook    "></i></a>
+                    <a href=""#><i class="bi bi-twitter"></i></a>
+                    <a href=""#><i class="bi bi-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
